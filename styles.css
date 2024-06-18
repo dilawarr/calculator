@@ -25,6 +25,7 @@ body {
 	height: 70vh;
 	width: 26vw;
 	border: 1px solid rgb(65, 65, 65);
+	justify-content: space-evenly;
 	/* border-radius: 10%; */
 }
 
@@ -47,6 +48,7 @@ body {
 	flex-shrink: 0;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
 }
 
 .left-buttons {
@@ -54,6 +56,8 @@ body {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
+	/* justify-content: space-evenly; */
+	gap: 2px;
 }
 
 .utility {
@@ -61,6 +65,10 @@ body {
 	flex-grow: 0.25;
 	display: flex;
 	flex-direction: row;
+	/* justify-content: space-evenly; */
+	gap: 2px;
+	margin-left: 2px;
+	/* gap: 1vw; */
 }
 
 .numbers {
@@ -68,6 +76,8 @@ body {
 	flex: 1 0 auto;
 	display: flex;
 	flex-direction: column;
+	gap: 2px;
+	margin-left: 2px;
 }
 
 .numbers-row {
@@ -75,6 +85,7 @@ body {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: row;
+	gap: 2px;
 }
 
 .font-black {
@@ -96,6 +107,7 @@ body {
 button {
 	flex-grow: 1;
 	border: none;
+	border-radius: 15%;
 }
 
 .flex-grow-2 {
@@ -106,5 +118,8 @@ button {
 	/* border: 1px solid red; */
 	flex-grow: 0.3;
 	display: flex;
+	/* justify-content: space-evenly; */
+	gap: 2px;
+	margin: 0px 2px;
 	flex-direction: column;
 }
