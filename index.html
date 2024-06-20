@@ -9,42 +9,46 @@
 	</head>
 	<body>
 		<section class="calculator">
-			<section class="display">012312345</section>
+			<section class="display"></section>
 			<section class="buttons">
 				<section class="left-buttons">
 					<section class="utility">
-						<button class="bg-gray font-black">C</button>
-						<button class="bg-gray font-black">+/-</button>
-						<button class="bg-gray font-black">%</button>
+						<button class="bg-gray font-black" id="clear" tabindex="-1">
+							C
+						</button>
+						<button class="bg-gray font-black invert" tabindex="-1">+/-</button>
+						<button class="bg-gray font-black" tabindex="-1">%</button>
 					</section>
 					<section class="numbers">
 						<section class="numbers-row">
-							<button class="bg-dark-gray">9</button>
-							<button class="bg-dark-gray">8</button>
-							<button class="bg-dark-gray">7</button>
+							<button class="bg-dark-gray number" tabindex="-1">9</button>
+							<button class="bg-dark-gray number" tabindex="-1">8</button>
+							<button class="bg-dark-gray number" tabindex="-1">7</button>
 						</section>
 						<section class="numbers-row">
-							<button class="bg-dark-gray">6</button>
-							<button class="bg-dark-gray">5</button>
-							<button class="bg-dark-gray">4</button>
+							<button class="bg-dark-gray number" tabindex="-1">6</button>
+							<button class="bg-dark-gray number" tabindex="-1">5</button>
+							<button class="bg-dark-gray number" tabindex="-1">4</button>
 						</section>
 						<section class="numbers-row">
-							<button class="bg-dark-gray">3</button>
-							<button class="bg-dark-gray">2</button>
-							<button class="bg-dark-gray">1</button>
+							<button class="bg-dark-gray number" tabindex="-1">3</button>
+							<button class="bg-dark-gray number" tabindex="-1">2</button>
+							<button class="bg-dark-gray number" tabindex="-1">1</button>
 						</section>
 						<section class="numbers-row">
-							<button class="flex-grow-2 bg-dark-gray">0</button>
-							<button class="bg-dark-gray">.</button>
+							<button class="flex-grow-2 bg-dark-gray number" tabindex="-1">
+								0
+							</button>
+							<button class="bg-dark-gray decimal" tabindex="-1">.</button>
 						</section>
 					</section>
 				</section>
 				<section class="operators">
-					<button class="bg-orange">/</button>
-					<button class="bg-orange">x</button>
-					<button class="bg-orange">-</button>
-					<button class="bg-orange">+</button>
-					<button class="bg-orange">=</button>
+					<button class="bg-orange operator" tabindex="-1">/</button>
+					<button class="bg-orange operator" tabindex="-1">*</button>
+					<button class="bg-orange operator" tabindex="-1">-</button>
+					<button class="bg-orange operator" tabindex="-1">+</button>
+					<button class="bg-orange operator" tabindex="-1">=</button>
 				</section>
 			</section>
 		</section>
