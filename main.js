@@ -97,9 +97,13 @@ document.querySelectorAll(".operator").forEach((button) => {
 				display.textContent = operands[0];
 				if (Number(display.textContent) >= 10000000)
 					display.textContent /= 100000000;
-				if (Number.isInteger(Number(display.textContent)))
+				if (Number.isInteger(Number(display.textContent))) {
+					isFloat = 0;
 					display.textContent = display.textContent.substring(0, 8);
-				else display.textContent = display.textContent.substring(0, 9);
+				} else {
+					isFloat = 1;
+					display.textContent = display.textContent.substring(0, 9);
+				}
 				clearText = 1;
 				currOperand = -1;
 			} else if (currOperand == 0 && button.textContent == "=") {
